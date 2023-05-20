@@ -12,9 +12,10 @@
         <small class="price text-muted">
           {{ lib.getNumberFormatted(item.price)}}p</small>
         <small class="discount text-danger">
-          {{ item.discountPer }}%추가-</small>
+          {{ item.countPer }}%추가-</small>
         <small class="discount text-danger">
-          {{ lib.getNumberFormatted (item.price - ( item.price * item.discountPer / 100)) }}P</small>
+          {{ lib.getNumberFormatted (item.price + ( item.price * item.discountPer / 100)) }}P</small>
+
 
         <button class="btn btn primary">봉사 신청</button>
 
